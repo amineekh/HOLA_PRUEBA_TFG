@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:backgroundTint="#202020"
+    tools:context=".MainActivity_Pantalla_registrarse">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="277dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rollerpizzarojo"
+
+        />
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="352dp"
+        android:layout_height="218dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        app:layout_constraintVertical_bias="0.114">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/editText_nombre"
+                android:layout_width="352dp"
+                android:layout_height="46dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableLeft="@drawable/baseline_person_outline_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@color/rojo"
+
+                app:layout_constraintEnd_toEndOf="@id/guideline"
+                app:layout_constraintStart_toStartOf="@id/guideline2"
+                tools:layout_editor_absoluteY="154dp" />
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="352dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableLeft="@drawable/baseline_markunread_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textCursorDrawable="@color/rojo"
+
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+
+
+            <EditText
+                android:id="@+id/editText_telefono"
+                android:layout_width="352dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableLeft="@drawable/baseline_phone_enabled_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="+34"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textCursorDrawable="@color/rojo"
+
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+
+            <EditText
+                android:id="@+id/editText_fecha"
+                android:layout_width="352dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/edit_text_border"
+                android:drawableLeft="@drawable/baseline_tag_faces_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="Fecha Nacimiento"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textCursorDrawable="@color/rojo"
+
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_register_password"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:textColorHint="#ECECEC"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="#D0202C">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="352dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/edit_text_border"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="20dp"
+                    android:ems="10"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+
+                    android:textCursorDrawable="@color/rojo"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+
+                    app:layout_constraintTop_toBottomOf="@+id/editText_passwo" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_register_confirm_password"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:textColorHint="#ECECEC"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="#D0202C"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_width="352dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/edit_text_border"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="20dp"
+                    android:ems="10"
+                    android:hint="Confirmar contraseña"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textCursorDrawable="@color/rojo"
+
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+
+
+                    />
+
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_switch1"
+        android:layout_width="373dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="46dp"
+            android:layout_height="31dp"
+            android:text=""
+            android:thumbTint="@color/rojo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:text="Acepto recibir comunicaciones comerciales y ofertas personalizadas"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_switch2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_switch1">
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="46dp"
+            android:layout_height="2dp"
+            android:text=""
+            android:thumbTint="@color/rojo" />
+
+        <TextView
+            android:id="@+id/olvidar_password"
+            android:layout_width="134dp"
+            android:layout_height="22dp"
+            android:text="He leído y acepto las "
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="10dp" />
+
+        <TextView
+            android:id="@+id/textView_politica_privacidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D0202C"
+            android:foregroundTint="#D0202C"
+            android:text="   Políticas de Privacidad"
+            android:textColor="#D0202C"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_crear_cuenta"
+        android:layout_width="304dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#D0202C"
+        android:text="CREAR CUENTA"
+        android:textAlignment="inherit"
+        android:textColor="#202020"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_switch2" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_iniciar_sesion"
+        android:layout_width="316dp"
+        android:layout_height="41dp"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_crear_cuenta"
+        app:layout_constraintVertical_bias="0.187">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes Cuenta?"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView_iniciasesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Inicia Sesión"
+
+            android:textColor="@color/rojo"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="30dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

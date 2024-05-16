@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HOLA_PRUEBA_TFG</string>
+
+    <string name="loading">loading</string>
+    <string name="user_display_picture">hola</string>
+    <string name="name"></string>
+    <string name="email">hola</string>
+
+    <string name="dob">loading</string>
+    <string name="gender">loading</string>
+    <string name="mobile">loading</string>
+    <string name="registered_user_since">loading</string>
+
+
+    <string name="upload_pic_u">loading</string>
+    <string name="update_email_u">loading</string>
+
+    <string name="perfil_usuario">Bienvenido %1$s!</string>
+</resources>

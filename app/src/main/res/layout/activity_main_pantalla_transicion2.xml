@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#800D15"
+    tools:context=".MainActivity_PantallaTransicion2">
+
+    <ImageView
+        android:id="@+id/logo_rojo2"
+        android:layout_width="336dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_fondo_rojo_oscuro" />
+
+    <ImageView
+        android:id="@+id/foto_pizza2"
+        android:layout_width="316dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_rojo2"
+        app:srcCompat="@drawable/foto_ofertas" />
+
+    <TextView
+        android:id="@+id/textView_bienvenido2"
+        android:layout_width="333dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="¡Pide tus pizzas en RollerPizza!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_pizza2" />
+
+    <TextView
+        android:id="@+id/textView_frase2"
+        android:layout_width="285dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:text="Y consigue las medianas más baratas de Fuenlabrada"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bienvenido2" />
+
+    <ImageView
+        android:id="@+id/imageView_circulo_negro12"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_circulo_gris12.2"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/imageView_circulo_gris1.2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_frase2"
+        app:srcCompat="@drawable/circulo_negro2" />
+
+    <ImageView
+        android:id="@+id/imageView_circulo_gris1.2"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_circulo_negro12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_frase2"
+        app:srcCompat="@drawable/circulo_gris2" />
+
+    <ImageView
+        android:id="@+id/imageView_circulo_gris12.2"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_circulo_negro12"
+        app:layout_constraintTop_toBottomOf="@+id/textView_frase2"
+        app:srcCompat="@drawable/circulo_gris2" />
+
+    <Button
+        android:id="@+id/button_continuar2"
+        android:layout_width="261dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#000000"
+        android:text="CONTINUAR"
+        android:textColor="#D0202C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_circulo_negro12" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

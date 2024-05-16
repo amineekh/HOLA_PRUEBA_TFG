@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/logo_rojo"
+        android:layout_width="336dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_fondo_rojo" />
+
+    <ImageView
+        android:id="@+id/foto_pizza"
+        android:layout_width="316dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_rojo"
+        app:srcCompat="@drawable/pizza_foto" />
+
+    <TextView
+        android:id="@+id/textView_bienvenido"
+        android:layout_width="333dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:text="¡Bienvenidx a la nueva App de RollerPizza!"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto_pizza" />
+
+    <TextView
+        android:id="@+id/textView_frase"
+        android:layout_width="236dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="Regístrate para poder acceder a las mejores promociones ;)"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_bienvenido" />
+
+    <ImageView
+        android:id="@+id/imageView_circulo_negro1"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_circulo_gris1"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_frase"
+        app:srcCompat="@drawable/punto1" />
+
+    <ImageView
+        android:id="@+id/imageView_circulo_gris1"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_circulo_gris12"
+        app:layout_constraintTop_toBottomOf="@+id/textView_frase"
+        app:srcCompat="@drawable/punto2" />
+
+    <ImageView
+        android:id="@+id/imageView_circulo_gris12"
+        android:layout_width="26dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_frase"
+        app:srcCompat="@drawable/punto2" />
+
+    <Button
+        android:id="@+id/button_continuar"
+        android:layout_width="261dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#000000"
+        android:text="CONTINUAR"
+        android:textColor="#D0202C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_circulo_gris1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

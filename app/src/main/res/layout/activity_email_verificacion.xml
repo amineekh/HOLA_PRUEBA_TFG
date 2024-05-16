@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020"
+    android:backgroundTint="#202020"
+    tools:context=".Email_Verificacion">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="159dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/email_verificacion" />
+
+    <TextView
+        android:id="@+id/textView_titulo"
+        android:layout_width="279dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:shadowColor="#F4F4F4"
+        android:text="Verifique su dirección de correo electrónico"
+        android:textColor="#F6F6F6"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView_parrafo_1"
+        android:layout_width="343dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Acabamos de enviar un enlace de verificación por correo electrónico a su correo electrónico. Por favor revise el correo electrónico y haga clic en ese enlace
+ para verificar su dirección de correo electrónico."
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_titulo" />
+
+    <TextView
+        android:id="@+id/textView_parrafo_2"
+        android:layout_width="318dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Si no se redirige automáticamente después de la verificación, haga clic en el botón Continuar."
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_parrafo_1" />
+
+
+    <Button
+        android:id="@+id/boton_email"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="185dp"
+
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#202020"
+        android:text="EMAIL"
+        android:textColor="#D0202C"
+        android:textSize="20dp"
+
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_parrafo_2"
+        app:strokeColor="#D0202C" />
+
+    <TextView
+        android:id="@+id/textView_renvio_enlace_autentificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Reenviar enlace al correo electrónico "
+        android:textColor="@color/rojo"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/boton_email" />
+
+    <TextView
+        android:id="@+id/textView_iniciar_sesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Incio Sesión"
+        android:textColor="@color/rojo"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_renvio_enlace_autentificacion"
+        app:layout_constraintVertical_bias="0.017" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="35dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="35dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

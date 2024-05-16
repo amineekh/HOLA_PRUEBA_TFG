@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Telefono_Verificacion_OTP_Pantalla_1"
+    android:gravity="center"
+    android:background="#202020"
+    >
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+
+        android:text="Verificación OTP"
+        android:textColor="@color/white"
+
+        android:textSize="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circular_background"
+            android:backgroundTint="@color/gris_2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circular_background"
+            android:backgroundTint="@color/rojo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/otp_icon_codigo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView_frase_codigo"
+        android:layout_width="273dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Por favor, introduzca código de verificacion enviado al"
+
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <TextView
+        android:id="@+id/textView_numero"
+        android:layout_width="244dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView_frase_codigo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="334dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="8dp"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_numero">
+
+
+        <EditText
+            android:id="@+id/edit_text_code_1"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="@drawable/borde_codigo_verificacion"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor"
+
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="513dp" />
+
+        <EditText
+            android:id="@+id/edit_text_code_2"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="7dp"
+            android:background="@drawable/borde_codigo_verificacion"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor"
+
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="513dp" />
+
+        <EditText
+            android:id="@+id/edit_text_code_3"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="7dp"
+
+            android:background="@drawable/borde_codigo_verificacion"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor"
+
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="513dp" />
+
+        <EditText
+            android:id="@+id/edit_text_code_4"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="7dp"
+
+            android:background="@drawable/borde_codigo_verificacion"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor"
+
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="513dp" />
+
+        <EditText
+            android:id="@+id/edit_text_code_5"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="7dp"
+
+            android:background="@drawable/borde_codigo_verificacion"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor"
+
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="513dp" />
+
+        <EditText
+            android:id="@+id/edit_text_code_6"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="7dp"
+
+            android:background="@drawable/borde_codigo_verificacion"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="LabelFor"
+
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="513dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_switch2"
+        android:layout_width="328dp"
+        android:layout_height="42dp"
+
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton_verificar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No has recibido el código?"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView_renviar_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Reenviar código"
+            android:textColor="@color/rojo"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/textView_iniciar_sesion"
+        android:layout_width="110dp"
+        android:layout_height="31dp"
+        android:text=" Inicar sesión"
+        android:textColor="@color/rojo"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_switch2"
+        app:layout_constraintVertical_bias="0.235" />
+
+    -->
+
+    <Button
+        android:id="@+id/boton_verificar"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="199dp"
+
+        android:layout_height="74dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#202020"
+
+        android:text="VERIFICAR"
+        android:textColor="#D0202C"
+        android:textSize="20dp"
+        app:cornerRadius="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:strokeColor="#D0202C" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="35dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="35dp" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="refrescar"
+        android:icon="@drawable/baseline_refresh_24"
+        android:alphabeticShortcut="r"
+        android:id="@+id/refrescar"
+
+
+    />
+
+    <item android:title="Actualizar perfil"
+        android:id="@+id/Actualizar_perfil"
+
+        />
+
+    <item android:title="Actualizar Email"
+        android:id="@+id/Actualizar_email"
+
+        />
+
+    <item android:title="Actualizar contraseña"
+        android:id="@+id/Actualizar_password"
+
+        />
+
+    <item android:title="Eliminar perfil"
+        android:id="@+id/Eliminar_perfil"
+
+        />
+
+    <item android:title="Ajustes"
+        android:id="@+id/Ajustes"
+
+        />
+
+    <item android:title="Cerrar sesión"
+        android:id="@+id/cerrar_sesion"
+
+        />
+
+
+
+</menu>
